@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>var, let and constant</title>
+</head>
+<body>
+	<h1>var, let and constant</h1>
+	<script type="text/javascript">
+		var a=10;
+		//document.write(a)
+		let b=20;
+		//let b=30; wrong redeclaration is not possible
+		b=30;
+		document.write(b,"<br>");
+		//block level variable
+		{
+			let c=30;
+			document.write(c,"<br>");
+		}
+		//document.write(c); not possible beccause of c is block scope variable
+		const pi=3.14;
+		const atmcardno=123456;
+		document.write(atmcardno,"<br>");
+		document.write(pi,"<br>");
+	</script>
+
+</body>
+</html>
