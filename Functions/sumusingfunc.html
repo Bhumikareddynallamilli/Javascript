@@ -16,6 +16,31 @@
 			return a*b
 		}
 		document.write(x(10,20))
+
+		//es6 arrow functions "=>"
+		//never use function keyword
+		//arrow function with 1 arguments
+		getname = a =>{
+			document.write(a)
+		}
+		getname("bhumi")
+		//arrow function with 2 arguments
+		add=(a,b)=>{
+			document.write(a+b)
+		}
+		add(10,20)
+		document.write("<br>")
+
+		test=_ =>{
+			document.write("testingss")
+		}
+		test()
+		
+		//setTime function
+		setTimeout(test1,2000)
+		function test1(){
+			document.write("enables after 2 sec")
+		}
 	</script>
 
 </body>
