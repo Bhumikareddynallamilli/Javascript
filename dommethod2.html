@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM METHOD</title>
+</head>
+<body>
+	<p class="topic">HTML</p>
+	<p class="topic">CSS</p>
+	<p class="topic">BS</p>
+	<p class="topic">JS</p>
+	<ul>
+		<li>AEC</li>
+		<li>ACET</li>
+		<li>ACOE</li>
+	</ul>
+	<script type="text/javascript">
+		let s=document.getElementsByClassName('topic');
+		console.log(s);
+		s[0].innerHTML='hyper text markup language';
+		let a=document.getElementsByTagName('li');
+		a[0].innerText='Aditya Engineering College';
+	</script>
+</body>
+</html>
