@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task</title>
+</head>
+<body>
+	<center>
+	<button onclick="incrby()">Inc</button>
+	<button onclick="decrby()">dec</button>
+	<p>output</p>
+	<p id="output_id"></p>
+	</center>
+	<script type="text/javascript">
+		var i=1;
+		function incrby(){
+			if(i<=6){
+				var res=i++;
+				document.getElementById('output_id').innerText=res
+			}
+		}
+		function decrby(){
+			if(i>0){
+				var res=--i;
+				document.getElementById('output_id').innerText=res
+			}
+		}
+	</script>
+
+</body>
+</html>
