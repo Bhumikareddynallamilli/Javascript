@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>play game</title>
+	<style type="text/css">
+		label{
+			font-size:35px;
+			padding-top:100px;
+			
+
+		}
+		#center{
+			margin-top:75px;
+
+		}
+		input{
+			font-size:35px;
+			
+			
+		}
+		#but{
+			margin-top:50px;
+		}
+		
+		#output{
+			font-size:30px;
+		}
+		
+	</style>
+</head>
+<body>
+	<center id="center">
+  <div style="height:100px;width:600px;background-color:violet;border:2px solid black" >
+  	<div style="height:100px;width:100px;background-color:pink;float:left;">
+  		<label>1</label><br>
+  		<input type="radio" class="select"  name="button"  value="1"style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<div style="height:100px;width:100px;background-color:skyblue;float:left;">
+  		<label for="select">2</label><br>
+  		<input type="radio" class="select"  name="button" value="2"style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<div style="height:100px;width:100px;background-color:yellow;float:left;">
+  		<label for="select">3</label><br>
+  		<input type="radio" class="select"  name="button" value="3"style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<div style="height:100px;width:100px;background-color:violet;float:left;">
+  		<label for="select">4</label><br>
+  		<input type="radio" class="select" name="button"  value="4"style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<div style="height:100px;width:100px;background-color:orange;float:left;">
+  		<label for="select">5</label><br>
+  		<input type="radio" class="select" name="button"  value="5"style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<div style="height:100px;width:100px;background-color:lightgray;float:right;">
+  		<label for="select">6</label><br>
+  		<input type="radio" class="select" name="button"  value="6"style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<input  id="but"type="button" value="play" onclick="play()"style="height:60px;width:100px;background-color:green;"><br><br>
+  	<input type="number" id="in"><br><br>
+     <span id="output"></span>
+  </div>	
+  </center>
+  <script>
+function play() {
+
+  var uNum=document.getElementsByClassName("select");
+  console.log(uNum);
+  for(i=0;i<uNum.length;i++){
+  	if(uNum[i].checked){
+  		res=uNum[i].value;
+  		break;
+  	}
+  }
+  document.getElementById("in").value=Math.floor(Math.random() * (5)) + 1;
+  var rNum=document.getElementById("in").value;
+  if (res==rNum){
+  	document.getElementById("output").innerHTML="You are Win";
+  }
+  else{
+  	document.getElementById("output").innerHTML="You are Lost";
+  }
+}
+
+
+</script>
+</body>
+</html>

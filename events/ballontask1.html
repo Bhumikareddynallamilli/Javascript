@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ballon task</title>
+	<style type="text/css">
+		div{
+			border:2px solid black;
+		}
+		
+	</style>
+</head>
+<body>
+	<div style="height:600px; width:300px" >
+		<img src="ballon.jpg" height="600px" width="300px" onmouseover="ballon(this)" onmouseout="blow(this)">
+
+	</div>
+	<script type="text/javascript">
+		function ballon(b){
+			b.src="ballon1.jpg"
+		}
+		function blow(b){
+			b.src="ballon.jpg"
+		}
+	</script>
+
+</body>
+</html>

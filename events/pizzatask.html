@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza task</title>
+	<style type="text/css">
+		div{
+			border:2px solid black;
+		}
+		
+	</style>
+</head>
+<body>
+	<div style="height:400px; width:400px" >
+		<img src="pizza.jpg" height="400px" width="400px" onmouseover="full(this)" onmouseout="slice(this)" >
+
+	</div>
+	<script type="text/javascript">
+		function full(b){
+			b.src="pizza1.jpg"
+		}
+		function slice(b){
+			b.src="pizza.jpg"
+		}
+	</script>
+
+</body>
+</html>

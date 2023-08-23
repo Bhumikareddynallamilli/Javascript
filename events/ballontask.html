@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ballon task</title>
+	<style type="text/css">
+		div{
+			border:2px solid black;
+		}
+		
+	</style>
+</head>
+<body>
+	<div style="height:600px;width:250px" >
+		<img src="ballon.jpg" height="600" width="250" id="ba_id">
+	</div>
+	
+	<script type="text/javascript">
+		let b=document.getElementById("ba_id")
+		b.onmouseover=sample
+		b.onmouseout=sample1
+
+		function sample(){
+			document.src="ballon.jpg"
+		}
+		function sample1(){
+			document.src="ballon1.jpg"
+		}
+	</script>
+
+
+</body>
+</html>

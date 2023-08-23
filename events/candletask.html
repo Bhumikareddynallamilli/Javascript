@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			border:2px solid black;
+		}
+		
+	</style>
+</head>
+<body>
+	<div style="height:600px; width:250px" >
+		<img src="candle.jpg" height="600px" width="250px" onmouseover="candle(this)" onmouseout="glow(this)">
+
+	</div>
+	<script type="text/javascript">
+		function candle(b){
+			b.src="candle1.jpg"
+		}
+		function glow(b){
+			b.src="candle.jpg"
+		}
+	</script>
+
+</body>
+</html>

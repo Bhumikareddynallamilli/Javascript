@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#sp_id{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label>Enter Name</label>
+		<input type="text" name="" value="" onkeyup="sample()" id="input">
+		<br><span id="sp_id"></span>
+	</form>
+	<script type="text/javascript">
+		function sample(){
+			if(document.getElementById('input').value.length==0){
+				document.getElementById('sp_id').innerText='Enter your Name';
+				
+			}
+			
+			
+		}
+	</script>
+</body>
+</html>
